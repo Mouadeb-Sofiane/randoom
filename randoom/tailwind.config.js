@@ -10,6 +10,8 @@ module.exports = {
       pink: '#feaa9b',
       white: '#ffffff',
       black: '#000000',
+      barmenu:'#B9CCD3',
+      fond:'#DBEDF3',
       transparent: 'transparent',
       gray: colors.zinc
     },
