@@ -14,8 +14,7 @@ module.exports = {
       gray: colors.zinc
     },
     fontFamily: {
-      sans: ['Mulish', 'sans-serif'],
-      serif: ['Space Mono', 'monospace']
+      sans: ['Inter', 'sans-serif'],
     },
     extend: {
       gridTemplateColumns: {
