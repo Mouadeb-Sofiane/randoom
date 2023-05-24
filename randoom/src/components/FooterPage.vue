@@ -18,7 +18,7 @@
                 <img src="src/assets/icon/list-black.svg" class="mr-3 h-6 sm:h-9" alt="list color black" />
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
-            <a href="src/" class="flex justify-between ">
+            <a href="src/components/profilee.vue" class="flex justify-between ">
                 <img src="src/assets/icon/profile-black.svg" class="mr-3 h-6 sm:h-9" alt="profile color black" />
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>

@@ -20,4 +20,7 @@
   <h3 class="border-b-4 border-b-black p-2 m-3 w-40">Livres et Podcast</h3>
   <h2 class="border-b-4 border-b-black p-2 m-3 w-60">Vos Films et séries préférées</h2>
   <h2 class="border-b-4 border-b-black p-2 m-3 w-60">Livres et podcast populaires</h2>
+
+<p class="mt-5">Este slide carousel se ha hecho con Tailwindcss
+</p>
 </template>
