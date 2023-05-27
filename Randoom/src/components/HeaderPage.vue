@@ -1,3 +1,7 @@
 <template>
-    header
+    <header>
+        <div>
+            <p>header</p>
+        </div>
+    </header>
 </template>
