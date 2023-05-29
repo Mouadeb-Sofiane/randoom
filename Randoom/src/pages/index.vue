@@ -2,7 +2,6 @@
   <h1>Bienvenue !</h1>  
 <p>Si vous ne savez pas quoi choisir comme divertissement la roue choisira à votre place !</p>
 <h2 class="border-b-4 border-b-black p-8 m-8">Inspiré par RANDOOM</h2>
-<h3>Films et Séries</h3>
 <h3 class="border-b-4 border-b-black p-2 m-3 w-40">Films et Séries</h3>
 <div class="carousel carousel-center rounded-box">
 <div class="carousel-item">
@@ -16,9 +15,6 @@
 </div>
 </div> 
 
-<h3>Livres et Podcast</h3>
-<h2>Vos Films et séries préférées</h2>
-<h2>Livres et podcast populaires</h2>
 
 </div>
 <h3 class="border-b-4 border-b-black p-2 m-3 w-40">Livres et Podcast</h3>
