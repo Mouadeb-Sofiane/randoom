@@ -10,6 +10,8 @@ module.exports = {
       black: '#000000',
       barmenu: '#B9CCD3',
       fond: '#DBEDF3',
+      btnfond : '#0386D0',
+      btnfond2 : '#0037C5',
       transparent: 'transparent',
       gray: colors.zinc
     },
