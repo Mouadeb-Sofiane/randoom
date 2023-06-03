@@ -18,7 +18,7 @@
                 <img src="#" class="mr-3 h-6 sm:h-9" alt="list color black" />
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
-            <a href="src/pages/connexion.vue" class="flex justify-between ">
+            <a to="/connexion" class="flex justify-between ">
                 <img src="#" class="mr-3 h-6 sm:h-9" alt="profile color black" />
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
