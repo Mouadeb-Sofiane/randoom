@@ -2,8 +2,9 @@
 	import { ref, computed, watch } from 'vue'
     import LogoIcon from '@/components/icons/IconLogo.vue'
     import IconSearch from '@/components/icons/IconSearch.vue'
-    import User from '@/components/icons/User.vue'
-    import Home from '@/components/icons/Home.vue'
+    import IconUser from '@/components/icons/IconUser.vue'
+    import IconHome from '@/components/icons/IconHome.vue'
+    import IconList from '@/components/icons/IconList.vue'
 	import { RouterLink } from 'vue-router'
 </script>
 
@@ -14,7 +15,7 @@
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
   <ul class="flex justify-between">
     <li class="menu-item self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/"><Home/></RouterLink>
+		<RouterLink class="menu-link font-serif" to="/"><IconHome/></RouterLink>
 	</li>
     <li class="menu-item self-center text-xl font-semibold whitespace-nowrap dark:text-white">
 		<RouterLink class="menu-link font-serif" to="/" ><IconSearch/></RouterLink>
@@ -23,10 +24,10 @@
 		<RouterLink class="menu-link font-serif" to="/"><LogoIcon/></RouterLink>
 	</li>
     <li class="menu-item self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/" >Artistes</RouterLink>
+		<RouterLink class="menu-link font-serif" to="/"><IconList/></RouterLink>
 	</li>
     <li class="menu-item self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/connexion" ><User/></RouterLink>
+		<RouterLink class="menu-link font-serif" to="/connexion" ><IconUser/></RouterLink>
 	</li>
   </ul>
     </div>
