@@ -101,8 +101,8 @@
       console.log(pb.authStore.token);
       console.log(pb.authStore.model);
       // currentUser.value = pb.authStore.model
-    } catch (error) {
-      alert(error.message)
+    } catch (Error) {
+      alert(Error.message)
     }
   }
   
@@ -120,8 +120,8 @@
       const record = await pb.collection('users').create(data);
   
       await doLogin();
-    } catch (error) {
-      alert(error.message)
+    } catch (Error) {
+      alert(Error.message)
     }
   }
   

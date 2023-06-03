@@ -1,6 +1,7 @@
 {
   "name": "randoom",
   "version": "0.0.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -12,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "pocketbase": "^0.15.0",
     "vue": "^3.3.2",
     "vue-router": "^4.2.1"
