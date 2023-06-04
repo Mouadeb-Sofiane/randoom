@@ -24,7 +24,7 @@
 		<RouterLink class="menu-link font-serif" to="/"><LogoIcon/></RouterLink>
 	</li>
     <li class="menu-item self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/"><IconList/></RouterLink>
+		<RouterLink class="menu-link font-serif" to="/liste"><IconList/></RouterLink>
 	</li>
     <li class="menu-item self-center text-xl font-semibold whitespace-nowrap dark:text-white">
 		<RouterLink class="menu-link font-serif" to="/connexion" ><IconUser/></RouterLink>
