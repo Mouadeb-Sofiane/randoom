@@ -12,7 +12,7 @@ const showRandomFilm = ref(false);
 async function fetchFilmList() {
 listefilm = await pb.collection('film').getFullList<FilmResponse>();
 randomFilm = listefilm[Math.floor(Math.random() * listenerCount.length)];
-console.log("le film aléatoire", randomFilm);
+console.log("Tirer un film aléatoirement", randomFilm);
 }
 
 const displayRandomFilm = () => {
@@ -23,8 +23,9 @@ fetchFilmList();
 </script>
 
 <template>
-    <div class="mt-24">
+    <div class="mt-40">
         <button @click="displayRandomFilm">Afficher un film aléatoire</button>
         <CardFilms v-if="showRandomFilm" v-bind="{ ...randomFilm }" />
     </div>
 </template>
+

@@ -1,5 +1,5 @@
 <template>
-<svg fill="#000000" width="24" height="24" viewBox="0 0 512 512" id="_x30_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg fill="#000000" width="35" height="35" viewBox="0 0 512 512" id="_x30_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <g>
 <ellipse cx="256" cy="130" rx="110" ry="130"/>

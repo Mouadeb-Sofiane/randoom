@@ -1,6 +1,6 @@
 <template>
 <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="24" height="24" viewBox="0 0 495.398 495.398"
+	 width="35" height="35" viewBox="0 0 495.398 495.398"
 	 xml:space="preserve">
 <g>
 	<g>

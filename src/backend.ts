@@ -2,6 +2,11 @@ import PocketBase from 'pocketbase';
 import { Collections, type BooksResponse, type SeriesResponse, type FilmResponse } from './pocketbase-types';
 export const pb = new PocketBase('http://127.0.0.1:8090');
 
+export async function RandomFilm() {
+    const records = await pb.collection('film').getList<FilmResponse>(1, 1, { sort: '@random' })
+    return records
+}
+
 export async function Allfilm() {
     const listefilm = await pb.collection("film").getFullList<FilmResponse>() ;
     return listefilm;
