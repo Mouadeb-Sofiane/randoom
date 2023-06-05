@@ -1,14 +1,20 @@
 import PocketBase from 'pocketbase';
+import { Collections, type BooksResponse, type SeriesResponse, type FilmResponse } from './pocketbase-types';
 export const pb = new PocketBase('http://127.0.0.1:8090');
 
 export async function Allfilm() {
-    const listefilm = await pb.collection("film").getFullList() ;
+    const listefilm = await pb.collection("film").getFullList<FilmResponse>() ;
     return listefilm;
 }
 
 export async function Allbooks() {
-    const listebooks = await pb.collection("books").getFullList();
+    const listebooks = await pb.collection("books").getFullList<BooksResponse>();
     return listebooks;
+}
+
+export async function Allseries() {
+    const listeseries = await pb.collection("series").getFullList<SeriesResponse>() ;
+    return listeseries;
 }
 
 export async function filmById(id: string) {
@@ -39,3 +45,16 @@ export async function allseriesByRunt(){
     });
     return seriesRunt
 }
+
+
+export async function oneIDFilm(id: string) {
+    return await pb.collection(Collections.Film).getOne<FilmResponse>(id)
+  }
+
+export async function oneIDSeries(id: string) {
+    return await pb.collection(Collections.Series).getOne<SeriesResponse>(id)
+  }
+
+export async function oneIDBooks(id: string) {
+    return await pb.collection(Collections.Books).getOne<BooksResponse>(id)
+  }
