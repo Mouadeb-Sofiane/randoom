@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
-import type { FilmResponse } from '@/pocketbase-types'
-const props: FilmResponse = defineProps<FilmResponse>()
+import type { SeriesResponse } from '@/pocketbase-types'
+const props: SeriesResponse = defineProps<SeriesResponse>()
 
 
-const urlImg0 = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
-console.log(urlImg0)
+const urlImg1 = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
+console.log(urlImg1)
 </script>
 
 
@@ -15,20 +15,18 @@ console.log(urlImg0)
     <div>
         <h1 class="border-b-2 text-4xl text-center border-b-white">{{ Series_Title }}</h1>
     <div class="">
-      <img :src="urlImg0">
+      <img :src="urlImg1">
     </div>
 
     <div class="font-serif text-3xl">
-      <p>Tire du film : {{ Series_Title }}</p>
-      <p>Durée du film : {{ Runtime }}</p>
-      <p>Directeur artistique : {{ Director }}</p>
+      <p>Image : {{ Poster_Link }}</p>
+      <p>Tire de la serie : {{ Series_Title }}</p>
       <p>Les personnages principaux : {{ Star1, Star2, Star3, Star4 }}</p>
-      <p>Date de sortie : {{ Released_Year }}</p>
       <p>Note global du film : {{ IMDB_Rating }}</p>
       <p>Description : {{ Overview }}</p>
       <RouterLink
         :to="{
-            name: 'film-id',
+            name: 'series-id',
             params: {
                 id
             }

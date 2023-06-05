@@ -1,12 +1,12 @@
 <template>
     <div class="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
       <div class="w-full max-w-md space-y-8">
-        <div v-if="currentUser">text-black
-          <h1>Welcome {{ currentUser?.name }}</h1>
-          <div>
+        <div v-if="currentUser">
+          <h1>Bienvenue {{ currentUser?.name }} !</h1>
+          <div class="pt-10">
             <button type="button" @click="doLogout"
-              class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">logout</button>
-  
+              class=" rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Se déconnecter</button>
+
           </div>
         </div>
         <div v-else>
@@ -30,11 +30,11 @@
           <div v-if="loginMode">
             <div class="sm:col-span-2 sm:col-start-1 mt-2">
               <button type="button" @click="doLogin"
-                class="mr-3 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                class="mr-3 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 Se connecter</button>
   
               <button type="button" @click="loginMode = false"
-                class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                class="rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 S'inscrire</button>
   
             </div>
@@ -50,11 +50,11 @@
             </div>
             <div class="sm:col-span-2 sm:col-start-1 mt-2">
               <button type="button" @click="doCreateAccount"
-                class="mr-3 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                class="mr-3 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 Continuer</button>
   
               <button type="button" @click="loginMode = true"
-                class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
+                class="rounded-md bg-red px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
                 Annuler
               </button>
   

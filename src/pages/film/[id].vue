@@ -30,7 +30,7 @@ console.log(urlImg0)
       <img class="w-full" :src="urlImg0">
       <div>
         <div>
-          <h2 class="border-b-2 border-b-white p-1 m-3 w-full lg:w-2/4 lg:text-4xl">Description</h2>
+          <h2 class="border-b-2 border-b-white p-1 m-3 w-full lg:w-2/4 lg:text-4xl">Description du film :</h2>
           <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Overview"></p>
         </div>
       </div>
