@@ -5,16 +5,16 @@ import film from "./film.json" assert { type:'json' };
 
 for (const aBook of books) {
     //console.log(aBook);
-    pb.collection("book").create(aBook)
+    await pb.collection("books").create(aBook)
 }
 
 for (const aSerie of series) {
-    //console.log(aBook);
-    pb.collection("serie").create(aSerie)
+    //console.log(aSerie);
+   await pb.collection("series").create(aSerie)
 }
 
 for (const aFilm of film) {
-    //console.log(aBook);
-    pb.collection("film").create(aFilm)
+    //console.log(aFilm);
+    await pb.collection("film").create(aFilm)
 }
 

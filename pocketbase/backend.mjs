@@ -36,4 +36,3 @@ export async function alloeuvresByDate(){
     });
     return oeuvresDate
 }
-
