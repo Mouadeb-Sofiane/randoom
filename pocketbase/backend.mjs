@@ -1,38 +1,32 @@
 import PocketBase from 'pocketbase';
 export const pb = new PocketBase('http://127.0.0.1:8090');
 
-export async function Allartistes() {
-    const listeartistes = await pb.collection("artistes").getFullList() ;
-    return listeartistes;
+export async function Allfilm() {
+    const listefilm = await pb.collection("film").getFullList() ;
+    return listefilm;
 }
 
-export async function AllOeuvres() {
-    const listeOeuvres = await pb.collection("oeuvres").getFullList();
-    return listeOeuvres;
+export async function Allbooks() {
+    const listebooks = await pb.collection("books").getFullList();
+    return listebooks;
 }
 
-export async function artistesById(id) {
-    const unartistes = await pb.collection('artistes').getOne(id);
-    return unartistes;
+export async function filmById(id) {
+    const aFilm = await pb.collection('film').getOne(id);
+    return aFilm;
 }
-export async function AlloeuvresByartiste(p){
-    const sortedoeuvresartistes = await pb.collection('artistes').getFullList({
-     filter: nom = `${p}`,
-        expand: 'oeuvres',
+
+
+export async function AllfilmByDate(){
+    const filmDate = await pb.collection('film').getFullList({
+        sort : "Released_Year",
     });
-    return sortedoeuvresartistes;
+    return filmDate
 }
 
-export async function AllartistesByDate(){
-    const artistesDate = await pb.collection('artistes').getFullList({
-        sort : "date_naissance",
+export async function allbooksByRat(){
+    const booksRat = await pb.collection('books').getFullList({
+        sort : "average_rating",
     });
-    return artistesDate
-}
-
-export async function alloeuvresByDate(){
-    const oeuvresDate = await pb.collection('oeuvres').getFullList({
-        sort : "date_creation",
-    });
-    return oeuvresDate
+    return booksRat
 }
