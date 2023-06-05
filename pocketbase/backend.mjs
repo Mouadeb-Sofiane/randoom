@@ -16,6 +16,15 @@ export async function filmById(id) {
     return aFilm;
 }
 
+export async function booksById(id) {
+    const aBooks = await pb.collection('books').getOne(id);
+    return aBooks;
+}
+
+export async function seriesById(id) {
+    const aSeries = await pb.collection('series').getOne(id);
+    return aSeries;
+}
 
 export async function AllfilmByDate(){
     const filmDate = await pb.collection('film').getFullList({
@@ -24,9 +33,9 @@ export async function AllfilmByDate(){
     return filmDate
 }
 
-export async function allbooksByRat(){
-    const booksRat = await pb.collection('books').getFullList({
-        sort : "average_rating",
+export async function allseriesByRunt(){
+    const seriesRunt = await pb.collection('books').getFullList({
+        sort : "Runtime_of_Series",
     });
-    return booksRat
+    return seriesRunt
 }
