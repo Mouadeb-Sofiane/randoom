@@ -5,6 +5,7 @@
     import IconUser from '@/components/icons/IconUser.vue'
     import IconHome from '@/components/icons/IconHome.vue'
     import IconList from '@/components/icons/IconList.vue'
+    import IconWeels from '@/components/icons/IconWeels.vue'
 	import { RouterLink } from 'vue-router'
 </script>
 
