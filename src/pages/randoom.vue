@@ -31,12 +31,12 @@ function startRotation() {
     rotationStyle.value = '';
     setTimeout(() => {
       router.push('/search');
-    }, 2000); // Délai de 2 seconde avant la redirection
+    }, 1000); // Délai de 1 seconde avant la redirection
   }, getRandomTime());
 }
 
 function getRandomTime() {
-  return Math.floor(Math.random() * 5000) + 3000; // Temps aléatoire entre 3s et 8s
+  return Math.floor(Math.random() * 3000) + 1000; 
 }
 </script>
 

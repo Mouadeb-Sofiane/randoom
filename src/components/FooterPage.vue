@@ -18,13 +18,13 @@
 		<RouterLink class="menu-link font-serif" to="/"><IconHome/></RouterLink>
 	</li>
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/recherche" ><IconSearch/></RouterLink>
+		<RouterLink class="menu-link font-serif" to="/all" ><IconSearch/></RouterLink>
     </li>
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
 		<RouterLink class="menu-link font-serif" to="/randoom"><LogoIcon/></RouterLink>
 	</li>
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/exemple-card"><IconList/></RouterLink>
+		<RouterLink class="menu-link font-serif" to="/recherche"><IconList/></RouterLink>
 	</li>
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
 		<RouterLink class="menu-link font-serif" to="/connexion" ><IconUser/></RouterLink>

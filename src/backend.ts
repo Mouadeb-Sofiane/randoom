@@ -7,6 +7,17 @@ export async function RandomFilm() {
     return records
 }
 
+export async function RandomSeries() {
+    const records = await pb.collection('series').getList<SeriesResponse>(1, 1, { sort: '@random' })
+    return records
+}
+
+export async function RandomBooks() {
+    const records = await pb.collection('books').getList<BooksResponse>(1, 1, { sort: '@random' })
+    return records
+}
+
+
 export async function Allfilm() {
     const listefilm = await pb.collection("film").getFullList<FilmResponse>() ;
     return listefilm;
