@@ -1,4 +1,4 @@
-<template>
+<template class="bg-fond">
   <p class="text-inter pt-24 pb-12 font-bold">Bienvenue!</p>
    <p class="text-center text-xl lg:text-3xl">Si vous ne savez pas quoi choisir comme divertissement la roue choisira à votre place !</p>
 
