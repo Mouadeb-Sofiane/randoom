@@ -22,7 +22,6 @@
       <a href="/">
       <IconLogo/>
       </a>
-	<RouterLink class="menu-link flex justify-center" to="/connexion" @click="closeMenu"><IconUser/>Se connecter</RouterLink>
     </div>
 
     <div class="flex items-center gap-4 lg:flex-row-reverse">
@@ -38,19 +37,47 @@
       :class="{ '!visible opacity-100': activeMenu }" 
       v-scroll-lock="activeMenu"
       >
-  <ul class="mt-[25vh] ml-16 font-bold font-size lg:m-0 lg:font-bold lg:text-3xl lg:flex lg:gap-14 lg:pr-20">
-    <li class="menu-item">
-		<RouterLink class="menu-link flex justify-center" to="/" @click="closeMenu"><IconHome/>Accueil</RouterLink>
-	</li>
-    <li class="menu-item">
-		<RouterLink class="menu-link flex justify-center" to="/search" @click="closeMenu"><IconSearch/>Rechercher</RouterLink>
-	</li> 
-    <li class="menu-item">
-		<RouterLink class="menu-link flex justify-center" to="/liste" @click="closeMenu"><IconList/>Listes</RouterLink>
-	</li>
-  </ul>
+      <ul class="mt-[25vh] ml-16 font-bold font-size lg:m-0 lg:font-bold lg:text-xl lg:flex lg:gap-14 lg:pr-20 justify-center">
+  <li class="menu-item">
+    <RouterLink class="menu-link flex items-center" to="/" @click="closeMenu">
+      <IconHome/> Accueil
+    </RouterLink>
+  </li>
+  <li class="menu-item">
+    <RouterLink class="menu-link flex items-center" to="/all" @click="closeMenu">
+      <IconSearch/> Rechercher
+    </RouterLink>
+  </li> 
+  <li class="menu-item">
+    <RouterLink class="menu-link flex items-center" to="/recherche" @click="closeMenu">
+      <IconList/> Listes
+    </RouterLink>
+  </li>
+  <li class="menu-item">
+    <RouterLink class="menu-link flex items-center" to="/connexion" @click="closeMenu">
+      <IconUser/> Se connecter
+    </RouterLink>
+  </li> 
+</ul>
 </nav>
-<Menu :menu-is-open="activeMenu" v-scroll-lock="activeMenu" />
-    </div>
+</div>
   </header>
 </template>
+
+ <!-- <ul class="mt-[25vh] ml-16 font-bold font-size lg:m-0 lg:font-bold lg:text-xl lg:flex lg:gap-14 lg:pr-20">
+    <li class="menu-item">
+		<RouterLink class="menu-link flex" to="/" @click="closeMenu"><IconHome/> Accueil</RouterLink>
+	</li>
+    <li class="menu-item">
+		<RouterLink class="menu-link flex" to="/search" @click="closeMenu"><IconSearch/> Rechercher</RouterLink>
+	</li> 
+    <li class="menu-item">
+		<RouterLink class="menu-link flex" to="/liste" @click="closeMenu"><IconList/> Listes</RouterLink>
+	</li>
+    <li class="menu-item">
+        <RouterLink class="menu-link flex" to="/connexion" @click="closeMenu"><IconUser/> Se connecter</RouterLink>
+    </li> 
+   </ul>
+</nav>
+<Menu :menu-is-open="activeMenu" v-scroll-lock="activeMenu" />
+    </div> -->
