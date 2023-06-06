@@ -2,12 +2,6 @@
 import { pb } from '@/backend'
 import type { FilmResponse } from '@/pocketbase-types'
 
-// const FilmInfo: FilmResponse = defineProps<FilmResponse>();
-// const img = FilmInfo.Poster_Link
-// const urlImg = img && pb.getFileUrl(FilmInfo, img, { thumb: '100x200' })
-
-// const urlImg0 = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
-// console.log(urlImg0)
 const props: FilmResponse = defineProps<FilmResponse>() 
   const urlImg = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
     console.log(urlImg)
@@ -45,17 +39,4 @@ const props: FilmResponse = defineProps<FilmResponse>()
     </div> 
     </div> 
     </div>
-</template>
-
-<!-- <script setup lang="ts">
-import { pb } from '@/backend'
-import type { MoviesResponse } from '@/pocketbase-types';
-
-
-</script>
-<template>
-    <img :src="urlImg" />
-    <p>{{ title }}</p>
-    <p>{{ filmer }}</p>
-    <p>{{ synopsis }}</p>
-</template> -->
+</template> 

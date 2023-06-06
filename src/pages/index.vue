@@ -1,20 +1,22 @@
 <template class="bg-fond">
   <p class="text-inter pt-24 pb-12 font-bold">Bienvenue!</p>
-   <p class="text-center text-xl lg:text-3xl">Si vous ne savez pas quoi choisir comme divertissement la roue choisira à votre place !</p>
+  <p class="text-center text-xl lg:text-3xl">Si vous ne savez pas quoi choisir comme divertissement la roue choisira à votre place !</p>
 
   <h2 class="pt-12 ml-3 font-bold font-inter text-2xl lg:text-3xl mb-2">Inspiré par RANDOOM</h2>
-  <div class="mb-12 ml-3 bg-black h-px w-2/5 lg:w-1/5"></div>
+    <div class="mb-12 ml-3 bg-black h-px w-2/5 lg:w-1/5"></div>
   <div>
-  <p class="font-bold ml-3 text-sm lg:text-xl mb-3">Films et Séries</p>
-  <p class="border-b-2 ml-3 mb-10 bg-black w-1/5 lg:w-1/3"></p>
+    <p class="font-bold ml-3 text-sm lg:text-xl mb-3">Films et Séries</p>
+    <p class="border-b-2 ml-3 mb-10 bg-black w-1/5 lg:w-1/3"></p>
   </div>
   
   <div class="ml-7 mr-7 flex w-auto h-64 overflow-x-auto gap-4 pb-5 lg:items-center">
+    <RouterLink to="/39">
     <div class="carousel-item">
       <img class="h-3/6 object-cover" src="../assets/icon/Frame102.png" alt="Slide 1">
       <p class="font-bold">The 39 Steps</p>
       <p class="">Alfred.Hitchcock</p>
     </div>
+    </RouterLink>
     <div class="carousel-item">
       <img class="h-3/6 object-cover" src="../assets/icon/Frame106.png" alt="Slide 2">
       <p class="font-bold">Lifeboat  </p>
@@ -30,7 +32,6 @@
       <img class="h-3/6 object-cover" src="../assets/icon/Frame103.png" alt="Slide 3">
       <p class="font-bold">Sonic Boom </p>
       <p class="">Cartoon.Network</p>
-  
     </div>
   
     <div class="carousel-item">
