@@ -15,7 +15,7 @@
     <div class="p-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
     <RouterLink to="/random">
         <div>
-            <img class="w-full" src="../assets/icon/Frame 117.png" alt="cadre">
+            <img class="w-full" src="../assets/icon/Frame 116.png" alt="cadre">
         </div>
     </RouterLink>
     <RouterLink to="/randomSeries">
