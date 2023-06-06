@@ -3,16 +3,16 @@ import { pb } from '@/backend'
 import type { FilmResponse } from '@/pocketbase-types';
 import CardFilms from '@/components/CardFilms.vue';
 import { ref } from 'vue';
-import { listenerCount } from 'process';
+
 
 let listefilm: FilmResponse[] = [];
-let randomFilm: FilmResponse | null = null;
+let RandomFilm: FilmResponse | null = null;
 const showRandomFilm = ref(false);
 
 async function fetchFilmList() {
 listefilm = await pb.collection('film').getFullList<FilmResponse>();
-randomFilm = listefilm[Math.floor(Math.random() * listenerCount.length)];
-console.log("Tirer un film aléatoirement", randomFilm);
+RandomFilm = listefilm[Math.floor(Math.random() * listefilm.length)];
+console.log("Tirer un film aléatoirement", RandomFilm);
 }
 
 const displayRandomFilm = () => {
@@ -25,6 +25,6 @@ fetchFilmList();
 <template>
     <div class="mt-40">
         <button @click="displayRandomFilm" class="text-black">Afficher un film aléatoire</button>
-        <CardFilms v-if="showRandomFilm" v-bind="{ ...randomFilm }" />
+        <CardFilms v-if="showRandomFilm" v-bind="{ ...RandomFilm }" />
     </div>
-</template> 
+</template>

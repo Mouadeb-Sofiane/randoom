@@ -1,9 +1,17 @@
 <template>
   <div class="flex justify-center items-center h-screen">
     <img :class="{ 'rotate': isRotating }" :style="{ transform: rotationStyle }" class="w-60 h-60" src="../assets/icon/Wheels.png" alt="Image">
-    <button @click="startRotation" class="ml-2 bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
-      Démarrer 
-    </button>
+    
+<button @click="startRotation" data-popover-target="popover-offset" data-popover-offset="30" type="button" class=" text-white bg-blue hover:bg-blue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Démarrer</button>
+<div data-popover id="popover-offset" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+    <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+        <h3 class="font-semibold text-gray-900 dark:text-white">Popover offset</h3>
+    </div>
+    <div class="text-black px-3 py-2">
+        <p>Faites tourner le roue pour choisir votre média.</p>
+    </div>
+    <div data-popper-arrow></div>
+    </div>  
   </div>
 </template>
 

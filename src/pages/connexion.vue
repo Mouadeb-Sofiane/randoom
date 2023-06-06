@@ -5,8 +5,10 @@
           <h1>Bienvenue {{ currentUser?.name }} !</h1>
           <div class="pt-10">
             <button type="button" @click="doLogout"
-              class=" rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Se déconnecter</button>
-
+              class=" rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Se déconnecter
+            </button>
+            
+            <button class="ml-10 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" href="../pages/index.vue">Retourner à l'accueil</button>
           </div>
         </div>
         <div v-else>

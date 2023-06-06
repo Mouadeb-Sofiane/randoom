@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
 import type { FilmResponse } from '@/pocketbase-types'
-const props: FilmResponse = defineProps<FilmResponse>()
 
+// const FilmInfo: FilmResponse = defineProps<FilmResponse>();
+// const img = FilmInfo.Poster_Link
+// const urlImg = img && pb.getFileUrl(FilmInfo, img, { thumb: '100x200' })
 
-const urlImg0 = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
-console.log(urlImg0)
+// const urlImg0 = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
+// console.log(urlImg0)
+const props: FilmResponse = defineProps<FilmResponse>() 
+  const urlImg = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
+    console.log(urlImg)
 </script>
 
 
@@ -15,7 +20,7 @@ console.log(urlImg0)
     <div>
         <h1 class="border-b-2 text-4xl text-center border-b-white">{{ Series_Title }}</h1>
     <div class="">
-      <img :src="urlImg0">
+      <img :src="urlImg">
     </div>
 
     <div class="font-serif text-xl">
@@ -41,3 +46,16 @@ console.log(urlImg0)
     </div> 
     </div>
 </template>
+
+<!-- <script setup lang="ts">
+import { pb } from '@/backend'
+import type { MoviesResponse } from '@/pocketbase-types';
+
+
+</script>
+<template>
+    <img :src="urlImg" />
+    <p>{{ title }}</p>
+    <p>{{ filmer }}</p>
+    <p>{{ synopsis }}</p>
+</template> -->
