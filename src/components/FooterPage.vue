@@ -18,7 +18,7 @@
 		<RouterLink class="menu-link font-serif" to="/"><IconHome/></RouterLink>
 	</li>
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-		<RouterLink class="menu-link font-serif" to="/search" ><IconSearch/></RouterLink>
+		<RouterLink class="menu-link font-serif" to="/recherche" ><IconSearch/></RouterLink>
     </li>
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
 		<RouterLink class="menu-link font-serif" to="/randoom"><LogoIcon/></RouterLink>
