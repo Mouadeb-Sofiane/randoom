@@ -15,7 +15,7 @@
   }
   
   onMounted(() => {
-    const filmId = 'm8who5vtb5sgdpn'; // Remplacez 'your-film-id' par l'ID du film que vous souhaitez récupérer
+    const filmId = 'm8who5vtb5sgdpn'; 
     fetchFilmById(filmId);
   });
 </script>

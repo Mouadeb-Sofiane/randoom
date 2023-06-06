@@ -1,5 +1,5 @@
-<template class="bg-fond">
-  <p class="text-inter pt-24 pb-12 font-bold">Bienvenue!</p>
+<template>
+  <p class="mt-24 text-inter text-3xl pt-24 pb-12 font-bold">Bienvenue!</p>
   <p class="text-center text-xl lg:text-3xl">Si vous ne savez pas quoi choisir comme divertissement la roue choisira à votre place !</p>
 
   <h2 class="pt-12 ml-3 font-bold font-inter text-2xl lg:text-3xl mb-2">Inspiré par RANDOOM</h2>
@@ -146,4 +146,4 @@
     </div>
   </div>
   <p class="pb-32"></p>
-      </template>
+</template>
