@@ -9,14 +9,6 @@ import { oneIDFilm } from '@/backend'
 const aFilm = await oneIDFilm (props.id)
 console.log(aFilm);
 
-import { oneIDSeries } from '@/backend'
-const aSeries = await oneIDSeries (props.id)
-console.log(aSeries);
-
-import { oneIDBooks } from '@/backend'
-const aBooks = await oneIDBooks (props.id)
-console.log(aBooks);
-
 
 
 const urlImg0 = aFilm.Poster_Link ? pb.getFileUrl(aFilm, aFilm.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
@@ -33,12 +25,27 @@ console.log(urlImg0)
           <h2 class="border-b-2 border-b-white p-1 m-3 w-full lg:w-2/4 lg:text-4xl">Description du film :</h2>
           <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Overview"></p>
         </div>
+        <div>
+          <h2 class="border-b-2 border-b-white p-1 m-3 w-full lg:w-2/4 lg:text-4xl">Genre filmique :</h2>
+          <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Genre"></p>
+        </div>
       </div>
     </div>
     <p class="border-b-4 mt-10 bg-white p-1 mx-5 md:mx-28"></p>
     <div>
-      <h2 class="border-b-2 border-b-white p-1 m-3 w-1/3 mt-10 mb-10">Notes global du film :</h2>
-      <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.IMDB_Rating"></p>
+        <h2 class="border-b-2 border-b-white p-1 m-3 w-full lg:w-2/4 lg:text-4xl">Notes global du film :</h2>
+        <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.IMDB_Rating"></p>
     </div>
+    <div>
+      <h2 class="border-b-2 border-b-white p-1 m-3 w-1/3 mt-10 mb-10">Le directeur artistique et les personnages principaux :</h2>
+      <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Director"></p>
+      <div>
+        <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Star1"></p>
+        <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Star2"></p>
+        <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Star3"></p>
+        <p class="ml-5 mr-5 text-lg lg:text-3xl" v-html="aFilm.Star4"></p>
+      </div>
+    </div>
+    <p class="pb-20"></p>
   </div>
 </template>
