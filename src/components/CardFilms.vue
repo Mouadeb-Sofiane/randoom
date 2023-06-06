@@ -84,6 +84,7 @@ const props: FilmResponse = defineProps<FilmResponse>()
 
 
 <template>
+<div> 
   <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div>
       <h1 class="border-b-2 text-4xl text-center border-b-white">{{ Series_Title }}</h1>
@@ -114,7 +115,9 @@ const props: FilmResponse = defineProps<FilmResponse>()
       </div>
     </div>
   </div>
+</div> 
   <div class="mb-40"></div>
+
 </template>
 
       
