@@ -11,7 +11,7 @@
 <template>
   <footer>
 
-    <nav class="flex fixed bottom-0 lg:fixed lg:left-0 w-screen bg-barmenu border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <nav class="flex fixed bottom-0 lg:flex lg:fixed w-screen bg-barmenu border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
   <ul class="flex justify-between">
     <li class="menu-item mr-10 self-center text-xl font-semibold whitespace-nowrap dark:text-white">

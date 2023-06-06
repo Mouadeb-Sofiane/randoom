@@ -10,12 +10,13 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "typegen":"pocketbase-typegen --db ./pocketbase/pb_data/data.db --out ./src/pocketbase-types.ts"
+    "typegen": "pocketbase-typegen --db ./pocketbase/pb_data/data.db --out ./src/pocketbase-types.ts"
   },
   "dependencies": {
     "axios": "^1.4.0",
     "csv-parser": "^3.0.0",
     "pocketbase": "^0.15.0",
+    "process": "^0.11.10",
     "vue": "^3.3.2",
     "vue-router": "^4.2.1"
   },
@@ -31,7 +32,7 @@
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
     "npm-run-all": "^4.1.5",
-    "pocketbase-typegen":"^1.1.9",
+    "pocketbase-typegen": "^1.1.9",
     "postcss": "^8.4.23",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",

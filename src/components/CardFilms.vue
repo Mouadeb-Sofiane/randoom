@@ -18,14 +18,14 @@ console.log(urlImg0)
       <img :src="urlImg0">
     </div>
 
-    <div class="font-serif text-3xl">
+    <div class="font-serif text-xl">
       <p>Tire du film : {{ Series_Title }}</p>
       <p>Durée du film : {{ Runtime }}</p>
-      <p>Directeur artistique : {{ Director }}</p>
-      <p>Les personnages principaux : {{ Star1, Star2, Star3, Star4 }}</p>
       <p>Date de sortie : {{ Released_Year }}</p>
       <p>Note global du film : {{ IMDB_Rating }}</p>
       <p>Description : {{ Overview }}</p>
+      <p>Directeur artistique : {{ Director }}</p>
+      <p>Les personnages principaux : {{ Star1, Star2, Star3, Star4 }}</p>
       <RouterLink
         :to="{
             name: 'film-id',

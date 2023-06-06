@@ -24,8 +24,7 @@ fetchFilmList();
 
 <template>
     <div class="mt-40">
-        <button @click="displayRandomFilm">Afficher un film aléatoire</button>
+        <button @click="displayRandomFilm" class="text-black">Afficher un film aléatoire</button>
         <CardFilms v-if="showRandomFilm" v-bind="{ ...randomFilm }" />
     </div>
-</template>
-
+</template> 
