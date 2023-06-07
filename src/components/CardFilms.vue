@@ -14,12 +14,11 @@ const props: FilmResponse = defineProps<FilmResponse>()
 <div class="flex justify-center"> 
   <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div>
-      <h1 class="border-b-2 text-4xl text-center border-b-white">{{ Series_Title }}</h1>
+      <h1 class="border-b-2 text-3xl text-center border-b-white underline mb-5">{{ Series_Title }}</h1>
       <div class="flex justify-center">
         <IconFilmSerie/>
       </div>
       <div class="p-5">
-        <p class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white text-center underline">{{ Series_Title }}</p>
         <p class="mt-3 text-gray-500 dark:text-gray-400 text-center">{{ Runtime }} / {{ Released_Year }}</p>
         <div class="flex items-center justify-center mt-3">
           <p class="text-gray-500 dark:text-gray-400">{{ IMDB_Rating }}</p>
@@ -29,7 +28,7 @@ const props: FilmResponse = defineProps<FilmResponse>()
           <span class="underline font-bold">Description:</span> {{ Overview }}
         </p>
         <p class="mt-3 text-gray-700 dark:text-gray-400">
-          <span class="underline font-bold">Directeur artistique:</span> {{ Director }}
+          <span class="underline font-bold">Rélisateur:</span> {{ Director }}
         </p>
         <p class="mt-3 text-gray-700 dark:text-gray-400">
           <span class="underline font-bold">Les personnages principaux:</span> {{ Star1 }}, {{ Star2 }}, {{ Star3 }}, {{ Star4 }}

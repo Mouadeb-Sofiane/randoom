@@ -2,13 +2,14 @@
     <div class="pt-52 pb-32 flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
       <div class="w-full max-w-md space-y-8">
         <div v-if="currentUser">
-          <h1>Bienvenue {{ currentUser?.name }} !</h1>
-          <div class="pt-10">
+          <h1 class="flex justify-center text-3xl">Bienvenue {{ currentUser?.name }} !</h1>
+          <div class="pt-12">
             <button type="button" @click="doLogout"
-              class=" rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Se déconnecter
+              class="mt-10 ml-12 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Se déconnecter
             </button>
             
             <button class="ml-10 rounded-md bg-blue px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" href="../pages/index.vue">Retourner à l'accueil</button>
+            <p class="flex mt-12 justify-center text-black"><IconRating/> Abonnement premium bientôt disponible <IconRating/></p>
           </div>
         </div>
         <div v-else>
@@ -70,6 +71,7 @@
   <script setup lang="ts">
   import { onMounted, ref } from 'vue';
   import PocketBase from 'pocketbase';
+  import IconRating from '@/components/icons/IconRating.vue'
   
   let pb:any = null;
   const currentUser = ref();
