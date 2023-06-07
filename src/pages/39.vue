@@ -23,27 +23,28 @@
     <div class="mt-40">
       <div v-if="film">
         <div class="font-serif text-xl">
-          <p class="mt-3 text-black">
+          <p class="mt-3 ml-5 text-black">
             <span class="underline font-bold">Titre du film :</span>{{ film.Series_Title }}
           </p>
-          <p class="mt-3 text-black">
+          <p class="mt-3 ml-5 text-black">
             <span class="underline font-bold">Durée du film : </span>{{ film.Runtime }}
           </p>
-          <p class="mt-3 text-black">
+          <p class="mt-3 ml-5 text-black">
             <span class="underline font-bold">Date de sortie :</span> {{ film.Released_Year }}
           </p>
-          <p class="mt-3 text-black">
+          <p class="mt-3 ml-5 text-black">
             <span class="underline font-bold">Note globale du film :</span> {{ film.IMDB_Rating }}
           </p>
-          <p class="mt-3 text-black">
-            <span class="underline font-bold"><p>Description :</span> {{ film.Overview }}</p>
+          <p class="mt-3 ml-5 mb-7 text-black">
+            <span class="underline font-bold">Description :</span> {{ film.Overview }}
           </p>
       </div>
+    </div>  
       <div v-else>
         <p>Aucun film trouvé.</p>
       </div>
-    </div>
-  </template>
+  </div>    
+</template>
   
   
   
