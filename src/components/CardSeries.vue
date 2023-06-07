@@ -1,41 +1,45 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
-import type { SeriesResponse } from '@/pocketbase-types'
-const props: SeriesResponse = defineProps<SeriesResponse>()
+import type { SeriesResponse } from '@/pocketbase-types';
+import IconRating from './icons/IconRating.vue';
+import IconFilmSerie from './icons/IconFilmSerie.vue';
 
+const props: SeriesResponse = defineProps<SeriesResponse>()
 
 const urlImg1 = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
 console.log(urlImg1)
 </script>
 
 
+
 <template>
-
-    <div class="flex justify-center lg:gap-80">
+<div class="flex justify-center"> 
+  <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div>
-        <h1 class="border-b-2 text-4xl text-center border-b-white">{{ Series_Title }}</h1>
-    <div class="">
-      <img :src="urlImg1">
+      <h1 class="border-b-2 text-3xl text-center border-b-white underline mb-5">{{ Series_Title }}</h1>
+      <div class="flex justify-center">
+        <IconFilmSerie/>
+      </div>
+      <div class="p-5">
+        <p class="mt-3 text-gray-500 dark:text-gray-400 text-center"> {{ Runtime_of_Episodes }} / {{ Runtime_of_Series }}</p>
+        <div class="flex items-center justify-center mt-3">
+          <p class="text-gray-500 dark:text-gray-400">{{ IMDB_Rating }}</p>
+          <IconRating class="ml-2" />
+        </div>
+        <p class="mt-3 text-black">
+          <span class="underline font-bold">Description:</span> {{ Overview }}
+        </p>
+        <p class="mt-3 text-gray-700 dark:text-gray-400">
+          <span class="underline font-bold">Les personnages principaux:</span> {{ Star1 }}, {{ Star2 }}, {{ Star3 }}, {{ Star4 }}
+        </p>
+        <div class="flex justify-center mt-6">
+          <RouterLink to="/randoomSeries">
+            <button class="bg-blue text-white rounded-full py-2 px-4">Relancer la roue</button>
+          </RouterLink>
+        </div>
+      </div>
     </div>
-
-    <div class="font-serif text-3xl">
-      <p>Image : {{ Poster_Link }}</p>
-      <p>Tire de la serie : {{ Series_Title }}</p>
-      <p>Les personnages principaux : {{ Star1, Star2, Star3, Star4 }}</p>
-      <p>Note global du film : {{ IMDB_Rating }}</p>
-      <p>Description : {{ Overview }}</p>
-      <RouterLink
-        :to="{
-            name: 'series-id',
-            params: {
-                id
-            }
-        }"
-        class=""
-      >
-        <button class="text-black font-serif rounded-full bg-autre m-2 py-2 px-2 ">En savoir plus</button>
-      </RouterLink>
-    </div> 
-    </div> 
-    </div>
+  </div>
+</div> 
+  <div class="mb-40"></div>
 </template>
