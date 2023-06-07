@@ -23,14 +23,21 @@
     <div class="mt-40">
       <div v-if="film">
         <div class="font-serif text-xl">
-          <p>Titre du film : {{ film.Series_Title }}</p>
-          <p>Durée du film : {{ film.Runtime }}</p>
-          <p>Date de sortie : {{ film.Released_Year }}</p>
-          <p>Note globale du film : {{ film.IMDB_Rating }}</p>
-          <p>Description : {{ film.Overview }}</p>
-          <p>Directeur artistique : {{ film.Director }}</p>
-          <p>Les personnages principaux : {{ film.Star1 }}, {{ film.Star2 }}, {{ film.Star3 }}, {{ film.Star4 }}</p>
-        </div>
+          <p class="mt-3 text-black">
+            <span class="underline font-bold">Titre du film :</span>{{ film.Series_Title }}
+          </p>
+          <p class="mt-3 text-black">
+            <span class="underline font-bold">Durée du film : </span>{{ film.Runtime }}
+          </p>
+          <p class="mt-3 text-black">
+            <span class="underline font-bold">Date de sortie :</span> {{ film.Released_Year }}
+          </p>
+          <p class="mt-3 text-black">
+            <span class="underline font-bold">Note globale du film :</span> {{ film.IMDB_Rating }}
+          </p>
+          <p class="mt-3 text-black">
+            <span class="underline font-bold"><p>Description :</span> {{ film.Overview }}</p>
+          </p>
       </div>
       <div v-else>
         <p>Aucun film trouvé.</p>
