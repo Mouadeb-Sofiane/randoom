@@ -9,7 +9,7 @@ let RandomBook: BooksResponse | null = null;
 const showRandomBook = ref(false);
 
 async function fetchBooksList() {
-  listebook = await pb.collection('film').getFullList<BooksResponse>();
+  listebook = await pb.collection('books').getFullList<BooksResponse>();
   RandomBook = listebook[Math.floor(Math.random() * listebook.length)];
   console.log("Tirer un film aléatoirement", RandomBook);
   showRandomBook.value = true; // Afficher les informations sur le film une fois récupérées

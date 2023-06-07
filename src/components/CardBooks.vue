@@ -1,31 +1,44 @@
 <script setup lang="ts">
 import { pb } from '@/backend'
 import type { BooksResponse } from '@/pocketbase-types'
-const props: BooksResponse = defineProps<BooksResponse>()
+import IconRating from './icons/IconRating.vue';
+import IconLivre from './icons/IconLivre.vue';
+
+const props: BooksResponse = defineProps<BooksResponse>() 
+  const urlImg = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
+    console.log(urlImg)
 </script>
 
 
 <template>
-
-    <div class="flex justify-center lg:gap-80">
+<div class="flex justify-center"> 
+  <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div>
-        <h1 class="border-b-2 text-4xl text-center border-b-white">{{ title }}</h1>
+      <h1 class="border-b-2 text-3xl text-center border-b-white underline mb-5">{{ title }}</h1>
+      <div class="flex justify-center">
+        <IconLivre/>
+      </div>
+      <div class="p-5">
+        <div class="flex items-center justify-center mt-3">
+          <p class="text-gray-500 dark:text-gray-400">{{ average_rating }}</p>
+          <IconRating class="ml-2" />
+        </div>
+        <p class="mt-3 text-black">
+          <span class="underline font-bold">Auteur:</span> {{ authors }}
+        </p>
+        <p class="mt-3 text-gray-700 dark:text-gray-400">
+          <span class="underline font-bold">Maisons d'éditions:</span> {{ publisher }}
+        </p>
+        <div class="flex justify-center mt-6">
+          <RouterLink to="/randoomBooks">
+            <button class="bg-blue text-white rounded-full py-2 px-4">Relancer la roue</button>
+          </RouterLink>
+        </div>
+      </div>
     </div>
+  </div>
+</div> 
+  <div class="mb-40"></div>
 
-    <div class="font-serif text-3xl">
-      <p>Tire du livre : {{ title }}</p>
-      <p>Auteur : {{ authors }}</p>
-      <RouterLink
-        :to="{
-            name: 'books-id',
-            params: {
-                id
-            }
-        }"
-        class=""
-      >
-        <button class="text-black font-serif rounded-full bg-autre m-2 py-2 px-2 ">En savoir plus</button>
-      </RouterLink>
-    </div> 
-    </div> 
 </template>
+  
