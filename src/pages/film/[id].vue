@@ -41,6 +41,5 @@ console.log(urlImg0)
       </div>
     </div>
   </div>
-</div> 
   <div class="mb-40"></div>
 </template>
