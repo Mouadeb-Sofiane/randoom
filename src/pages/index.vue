@@ -147,3 +147,7 @@
   </div>
   <p class="pb-32"></p>
 </template>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+import { pb } from '@/backend'
+</script>
