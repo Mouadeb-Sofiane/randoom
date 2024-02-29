@@ -13,39 +13,39 @@
     </div>
     </form>
     <div class="p-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
-        <img class="w-full" src="../assets/icon/Frame 116.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame116.png" alt="cadre">
     <div>
-        <img class="w-full" src="../assets/icon/Frame 117.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame117.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 118.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame118.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 119.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame119.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 120.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame120.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 121.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame121.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 122.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame122.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 123.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame123.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 124.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame124.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 125.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame125.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 126.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame126.png" alt="cadre">
     </div>
     <div>
-        <img class="w-full" src="../assets/icon/Frame 127.png" alt="cadre">
+        <img class="w-full" src="../assets/icon/Frame127.png" alt="cadre">
     </div>
     </div>
 </template>
