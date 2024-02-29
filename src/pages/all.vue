@@ -15,22 +15,22 @@
     <div class="p-10 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
         <RouterLink to="/randoom">
             <div class="lg:w-3/5">
-                <img class="w-full" src="../assets/icon/Frame 20.png" alt="cadre">
+                <img class="w-full" src="../assets/icon/Frame-20.png" alt="cadre">
             </div>
         </RouterLink>
         <RouterLink to="/randoomSeries">
             <div class="lg:w-3/5">
-                <img class="w-full" src="../assets/icon/Component 3.png" alt="cadre">
+                <img class="w-full" src="../assets/icon/Component-3.png" alt="cadre">
             </div>
         </RouterLink>
         <RouterLink to="/randoomBooks">
             <div class="lg:w-3/5">
-                <img class="w-full" src="../assets/icon/Component 1.png" alt="cadre">
+                <img class="w-full" src="../assets/icon/Component-1.png" alt="cadre">
             </div>
         </RouterLink>
         <RouterLink to="/randoomBooks">
             <div class="lg:w-3/5">
-                <img class="w-full" src="../assets/icon/Component 2.png" alt="cadre">
+                <img class="w-full" src="../assets/icon/Component-2.png" alt="cadre">
             </div>
         </RouterLink>
     </div>
