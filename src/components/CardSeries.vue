@@ -14,22 +14,22 @@ console.log(urlImg1)
 
 <template>
 <div class="flex justify-center"> 
-  <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-400 dark:border-gray-700">
     <div>
-      <h1 class="border-b-2 text-3xl text-center border-b-white underline mb-5">{{ Series_Title }}</h1>
+      <h1 class="border-b-2 text-3xl text-center border-b-black underline mb-5 text-black">{{ Series_Title }}</h1>
       <div class="flex justify-center">
         <IconFilmSerie/>
       </div>
       <div class="p-5">
-        <p class="mt-3 text-gray-500 dark:text-gray-400 text-center"> {{ Runtime_of_Episodes }} / {{ Runtime_of_Series }}</p>
+        <p class="mt-3 text-center text-black"> {{ Runtime_of_Episodes }} / {{ Runtime_of_Series }}</p>
         <div class="flex items-center justify-center mt-3">
-          <p class="text-gray-500 dark:text-gray-400">{{ IMDB_Rating }}</p>
+          <p class="text-black">{{ IMDB_Rating }}</p>
           <IconRating class="ml-2" />
         </div>
         <p class="mt-3 text-black">
           <span class="underline font-bold">Description:</span> {{ Overview }}
         </p>
-        <p class="mt-3 text-gray-700 dark:text-gray-400">
+        <p class="mt-3 text-black">
           <span class="underline font-bold">Les personnages principaux:</span> {{ Star1 }}, {{ Star2 }}, {{ Star3 }}, {{ Star4 }}
         </p>
         <div class="flex justify-center mt-6">

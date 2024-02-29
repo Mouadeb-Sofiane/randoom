@@ -12,21 +12,21 @@ const props: BooksResponse = defineProps<BooksResponse>()
 
 <template>
 <div class="flex justify-center"> 
-  <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <div class="mt-6 max-w-sm bg-white border border-gray-200 rounded-lg shadow text-black dark:bg-gray-400 dark:border-gray-700">
     <div>
-      <h1 class="border-b-2 text-3xl text-center border-b-white underline mb-5">{{ title }}</h1>
+      <h1 class="border-b-2 text-3xl text-center border-b-black underline mb-5">{{ title }}</h1>
       <div class="flex justify-center">
         <IconLivre/>
       </div>
       <div class="p-5">
         <div class="flex items-center justify-center mt-3">
-          <p class="text-gray-500 dark:text-gray-400">{{ average_rating }}</p>
+          <p class="text-black">{{ average_rating }}</p>
           <IconRating class="ml-2" />
         </div>
         <p class="mt-3 text-black">
           <span class="underline font-bold">Auteur:</span> {{ authors }}
         </p>
-        <p class="mt-3 text-gray-700 dark:text-gray-400">
+        <p class="mt-3text-black">
           <span class="underline font-bold">Maisons d'éditions:</span> {{ publisher }}
         </p>
         <div class="flex justify-center mt-6">
