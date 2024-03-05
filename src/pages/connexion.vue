@@ -106,7 +106,7 @@
       console.log(pb.authStore.model);
       // currentUser.value = pb.authStore.model
     } catch (Error) {
-      alert(Error.message)
+      alert((Error as Error).message);
     }
   }
   
@@ -125,7 +125,7 @@
   
       await doLogin();
     } catch (Error) {
-      alert(Error.message)
+      alert((Error as Error).message);
     }
   }
   
