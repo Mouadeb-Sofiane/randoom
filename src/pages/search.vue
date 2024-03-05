@@ -22,6 +22,6 @@ onMounted(() => {
 
 <template>
   <div class="mt-40">
-    <CardFilms v-if="showRandomFilm" v-bind="{ ...RandomFilm }" />
+    <CardFilms v-if="showRandomFilm && RandomFilm" v-bind="{ ...RandomFilm }" />
   </div>
 </template>

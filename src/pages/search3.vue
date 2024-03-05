@@ -22,6 +22,6 @@ onMounted(() => {
 
 <template>
   <div class="mt-40">
-    <CardBooks v-if="showRandomBook" v-bind="{ ...RandomBook }" />
+    <CardBooks v-if="showRandomBook && RandomBook" v-bind="{ ...RandomBook }" />
   </div>
 </template>
