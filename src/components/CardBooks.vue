@@ -5,8 +5,7 @@ import IconRating from './icons/IconRating.vue';
 import IconLivre from './icons/IconLivre.vue';
 
 const props: BooksResponse = defineProps<BooksResponse>() 
-  const urlImg = props.Poster_Link ? pb.getFileUrl(props, props.Poster_Link, { thumb: '100x250' }) : '/image-not-found.png'
-    console.log(urlImg)
+
 </script>
 
 
